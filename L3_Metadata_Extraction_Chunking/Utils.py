@@ -17,7 +17,7 @@ class Utils:
 
 class upld_file():
     def __init__(self):
-        self.widget_file_upload = pn.widgets.FileInput(accept='.pdf,.ppt,.png,.html', multiple=False)
+        self.widget_file_upload = pn.widgets.FileInput(accept='.pdf,.ppt,.png,.html,.epub', multiple=False)
         self.widget_file_upload.param.watch(self.save_filename, 'filename')
     
     def save_filename(self,_):
